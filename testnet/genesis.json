@@ -1,30 +1,10 @@
 {
-  "genesis_time": "2026-01-20T15:55:04.188454899Z",
-  "chain_id": "raitestnet_77701-1",
-  "initial_height": "1",
-  "consensus_params": {
-    "block": {
-      "max_bytes": "22020096",
-      "max_gas": "40000000"
-    },
-    "evidence": {
-      "max_age_num_blocks": "100000",
-      "max_age_duration": "172800000000000",
-      "max_bytes": "1048576"
-    },
-    "validator": {
-      "pub_key_types": [
-        "ed25519"
-      ]
-    },
-    "version": {
-      "app": "0"
-    },
-    "abci": {
-      "vote_extensions_enable_height": "0"
-    }
-  },
-  "app_hash": "",
+  "app_name": "republicd",
+  "app_version": "",
+  "genesis_time": "2026-01-23T12:36:11Z",
+  "chain_id": "raitestnet_77701-2",
+  "initial_height": 1,
+  "app_hash": null,
   "app_state": {
     "07-tendermint": null,
     "auth": {
@@ -38,49 +18,49 @@
       "accounts": [
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "rai1kwxum0cut7nnthe0r4762qh0zdyxhdajrg60vk",
+          "address": "rai1t043pmjlxydpml8yp0st7gs0usg7dartp7esuc",
           "pub_key": null,
           "account_number": "0",
           "sequence": "0"
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "rai1ddec99jj3stemyswdrq32820nzhcrpll7c2xym",
+          "address": "rai1h3ya0h4mkn9vj72z5kt04cdmugpk89tdej7cn5",
           "pub_key": null,
           "account_number": "1",
           "sequence": "0"
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "rai1lgv4gtvxsqc4lkxd8edk8qfla4ut97sg8n5d63",
+          "address": "rai123xkggst8pxezumraqljpgcwp2k9gwn9ltnmpe",
           "pub_key": null,
           "account_number": "2",
           "sequence": "0"
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "rai1hnlpldha0tvchvg0qqtw3hdrxgwwtqzl262hra",
+          "address": "rai15x8hrkxlgsugs3udewhy60vrealxhldqjuh3un",
           "pub_key": null,
           "account_number": "3",
           "sequence": "0"
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "rai1zcqqpvetwg6t36vs90n5am77dmz2l2j3wxpkp3",
+          "address": "rai1rgnv32ha89qwmt66uxfe2a9ernevh3uzwhuy46",
           "pub_key": null,
           "account_number": "4",
           "sequence": "0"
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "rai1u4cwmnta6ltjljsdrxwceddpd9dkxr9fff7rqg",
+          "address": "rai1jp8ru2x98z3chxgr3xch4atea636mkgygd32st",
           "pub_key": null,
           "account_number": "5",
           "sequence": "0"
         },
         {
           "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "rai12r9a2dx697fnlucg53clh08w3epc2k7zark3dy",
+          "address": "rai1802rm6fhv85793ljj9058n64dlphhcd8rxsyag",
           "pub_key": null,
           "account_number": "6",
           "sequence": "0"
@@ -97,7 +77,7 @@
       },
       "balances": [
         {
-          "address": "rai1zcqqpvetwg6t36vs90n5am77dmz2l2j3wxpkp3",
+          "address": "rai1rgnv32ha89qwmt66uxfe2a9ernevh3uzwhuy46",
           "coins": [
             {
               "denom": "arai",
@@ -106,7 +86,16 @@
           ]
         },
         {
-          "address": "rai12r9a2dx697fnlucg53clh08w3epc2k7zark3dy",
+          "address": "rai1802rm6fhv85793ljj9058n64dlphhcd8rxsyag",
+          "coins": [
+            {
+              "denom": "arai",
+              "amount": "20000000000000000000000000"
+            }
+          ]
+        },
+        {
+          "address": "rai123xkggst8pxezumraqljpgcwp2k9gwn9ltnmpe",
           "coins": [
             {
               "denom": "arai",
@@ -115,16 +104,7 @@
           ]
         },
         {
-          "address": "rai1ddec99jj3stemyswdrq32820nzhcrpll7c2xym",
-          "coins": [
-            {
-              "denom": "arai",
-              "amount": "50000000000000000000000000"
-            }
-          ]
-        },
-        {
-          "address": "rai1kwxum0cut7nnthe0r4762qh0zdyxhdajrg60vk",
+          "address": "rai1t043pmjlxydpml8yp0st7gs0usg7dartp7esuc",
           "coins": [
             {
               "denom": "arai",
@@ -133,7 +113,7 @@
           ]
         },
         {
-          "address": "rai1hnlpldha0tvchvg0qqtw3hdrxgwwtqzl262hra",
+          "address": "rai1jp8ru2x98z3chxgr3xch4atea636mkgygd32st",
           "coins": [
             {
               "denom": "arai",
@@ -142,7 +122,7 @@
           ]
         },
         {
-          "address": "rai1u4cwmnta6ltjljsdrxwceddpd9dkxr9fff7rqg",
+          "address": "rai15x8hrkxlgsugs3udewhy60vrealxhldqjuh3un",
           "coins": [
             {
               "denom": "arai",
@@ -151,11 +131,11 @@
           ]
         },
         {
-          "address": "rai1lgv4gtvxsqc4lkxd8edk8qfla4ut97sg8n5d63",
+          "address": "rai1h3ya0h4mkn9vj72z5kt04cdmugpk89tdej7cn5",
           "coins": [
             {
               "denom": "arai",
-              "amount": "20000000000000000000000000"
+              "amount": "50000000000000000000000000"
             }
           ]
         }
@@ -361,13 +341,13 @@
                   "details": ""
                 },
                 "commission": {
-                  "rate": "0.010000000000000000",
+                  "rate": "0.100000000000000000",
                   "max_rate": "0.200000000000000000",
                   "max_change_rate": "0.010000000000000000"
                 },
                 "min_self_delegation": "1",
                 "delegator_address": "",
-                "validator_address": "raivaloper1kwxum0cut7nnthe0r4762qh0zdyxhdajya6j8q",
+                "validator_address": "raivaloper1t043pmjlxydpml8yp0st7gs0usg7dartxtedhw",
                 "pubkey": {
                   "@type": "/cosmos.crypto.ed25519.PubKey",
                   "key": "JW0ftVy0o/3ub156SJJrBPsjBg4dv712UqMs0rWl74Y="
@@ -390,7 +370,7 @@
               {
                 "public_key": {
                   "@type": "/cosmos.evm.crypto.v1.ethsecp256k1.PubKey",
-                  "key": "A5sshoCGAsCXN2819PiSsJGGBD1RbaOLUfUz8QOzrerR"
+                  "key": "A6/V4E6835jaXdOQRuOgVW+DpslCuc0pozLnBzDQkDCH"
                 },
                 "mode_info": {
                   "single": {
@@ -409,7 +389,7 @@
             "tip": null
           },
           "signatures": [
-            "UqMK1rVz8Ak2+wD5wnqMlHs+J4WzuPltdtNPtJojq7ERpCfG4vcV4DKZYD7Xj4BMLQAp/B3dai5t15aPGP2MUAA="
+            "bFIe1v08UCgOxRsJlnRYzf2sRlZTx7DqWZQe37QTVaMoIxj5lu2I1hJIe8SKhwL07/eYfaWyQbi9G7xSXxYPlQE="
           ]
         }
       ]
@@ -588,5 +568,29 @@
     },
     "upgrade": {},
     "vesting": {}
+  },
+  "consensus": {
+    "params": {
+      "block": {
+        "max_bytes": "22020096",
+        "max_gas": "-1"
+      },
+      "evidence": {
+        "max_age_num_blocks": "100000",
+        "max_age_duration": "172800000000000",
+        "max_bytes": "1048576"
+      },
+      "validator": {
+        "pub_key_types": [
+          "ed25519"
+        ]
+      },
+      "version": {
+        "app": "0"
+      },
+      "abci": {
+        "vote_extensions_enable_height": "0"
+      }
+    }
   }
 }

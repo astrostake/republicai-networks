@@ -6,7 +6,7 @@
   "website": "https://republicai.io",
   "pretty_name": "Republic AI Testnet",
   "chain_type": "evm",
-  "chain_id": "raitestnet_77701-1",
+  "chain_id": "raitestnet_77701-2",
   "bech32_prefix": "rai",
   "daemon_name": "republicd",
   "node_home": "$HOME/.republicd",
