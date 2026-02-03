@@ -185,7 +185,7 @@ republicd tx staking create-validator \
   --from=<key-name>
 ```
 
-**Note**: Minimum self-delegation is 1000 RAI (1000000000000000000000 arai).
+**Note**: Minimum self-delegation is 1 RAI (1000000000000000000 arai).
 
 ## Useful Commands
 
