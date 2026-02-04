@@ -27,7 +27,7 @@ Welcome to the Republic AI testnet! This guide will help you join the network as
 
 ### Prerequisites
 
-- Ubuntu 22.04 LTS
+- Ubuntu 24.04 LTS
 - 4+ CPU cores
 - 16GB+ RAM
 - 500GB+ SSD
@@ -63,7 +63,7 @@ s|^(trust_height[[:space:]]+=[[:space:]]+).*$|\1$BLOCK_HEIGHT| ; \
 s|^(trust_hash[[:space:]]+=[[:space:]]+).*$|\1\"$TRUST_HASH\"|" "$REPUBLIC_HOME/config/config.toml"
 
 # 5. Configure persistent peers
-PEERS="517759f225c44c64fdc2fd5f4576778da4810fa5@44.199.194.212:26656,655b4c80d267633a6609d7030517a4043ffc419b@54.152.212.109:26656"
+PEERS="e281dc6e4ebf5e32fb7e6c4a111c06f02a1d4d62@3.92.139.74:26656,cfb2cb90a241f7e1c076a43954f0ee6d42794d04@54.173.6.183:26656,dc254b98cebd6383ed8cf2e766557e3d240100a9@54.227.57.160:26656"
 sed -i.bak -e "s/^persistent_peers *=.*/persistent_peers = \"$PEERS\"/" "$REPUBLIC_HOME/config/config.toml"
 
 # 6. Start node
@@ -87,7 +87,7 @@ republicd init <your-moniker> --chain-id raitestnet_77701-1 --home "$REPUBLIC_HO
 curl -s https://raw.githubusercontent.com/RepublicAI/networks/main/testnet/genesis.json > "$REPUBLIC_HOME/config/genesis.json"
 
 # 4. Configure persistent peers
-PEERS="517759f225c44c64fdc2fd5f4576778da4810fa5@44.199.194.212:26656,655b4c80d267633a6609d7030517a4043ffc419b@54.152.212.109:26656"
+PEERS="e281dc6e4ebf5e32fb7e6c4a111c06f02a1d4d62@3.92.139.74:26656,cfb2cb90a241f7e1c076a43954f0ee6d42794d04@54.173.6.183:26656,dc254b98cebd6383ed8cf2e766557e3d240100a9@54.227.57.160:26656"
 sed -i.bak -e "s/^persistent_peers *=.*/persistent_peers = \"$PEERS\"/" "$REPUBLIC_HOME/config/config.toml"
 
 # 5. Start node
@@ -132,7 +132,7 @@ s|^(rpc_servers[[:space:]]+=[[:space:]]+).*$|\1\"$SNAP_RPC,$SNAP_RPC\"| ; \
 s|^(trust_height[[:space:]]+=[[:space:]]+).*$|\1$BLOCK_HEIGHT| ; \
 s|^(trust_hash[[:space:]]+=[[:space:]]+).*$|\1\"$TRUST_HASH\"|" "$REPUBLIC_HOME/config/config.toml"
 
-PEERS="517759f225c44c64fdc2fd5f4576778da4810fa5@44.199.194.212:26656,655b4c80d267633a6609d7030517a4043ffc419b@54.152.212.109:26656"
+PEERS="e281dc6e4ebf5e32fb7e6c4a111c06f02a1d4d62@3.92.139.74:26656,cfb2cb90a241f7e1c076a43954f0ee6d42794d04@54.173.6.183:26656,dc254b98cebd6383ed8cf2e766557e3d240100a9@54.227.57.160:26656"
 sudo sed -i.bak -e "s/^persistent_peers *=.*/persistent_peers = \"$PEERS\"/" "$REPUBLIC_HOME/config/config.toml"
 
 # Fix ownership to match container user (UID 1001)
@@ -185,7 +185,7 @@ republicd tx staking create-validator \
   --from=<key-name>
 ```
 
-**Note**: Minimum self-delegation is 1000 RAI (1000000000000000000000 arai).
+**Note**: Minimum self-delegation is 1 RAI (1000000000000000000 arai).
 
 ## Useful Commands
 
@@ -220,6 +220,7 @@ After=network-online.target
 
 [Service]
 User=ubuntu
+WorkingDirectory=/home/ubuntu
 ExecStart=/usr/local/bin/republicd start --home /home/ubuntu/.republicd --chain-id raitestnet_77701-1
 Restart=always
 RestartSec=3
@@ -238,5 +239,5 @@ sudo systemctl start republicd
 
 ## Support
 
-- GitHub Issues: https://github.com/AizelNetwork/republic-protocol/issues
-- Discord: Coming Soon
+- GitHub Issues: https://github.com/RepublicAI/networks/issues
+- Discord: https://discord.com/invite/therepublic
